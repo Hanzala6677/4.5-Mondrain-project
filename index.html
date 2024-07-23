@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    .container{
+      display: grid;
+      grid-template-columns: repeat(4,30%) ;
+      grid-template-rows: 4fr 5fr 1fr 1fr;
+      grid-gap: 5px;
+      background-color: rgb(0, 0, 0);
+      height: 100%;
+      width: 100%;
+
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0px;
+      padding: 0px;
+      
+    }
+    .titles1{
+      background-color: red;
+      grid-column:1/2;
+    }
+    .titles2{
+      background-color: rgb(255, 255, 255);
+      grid-column: span 3;
+    }
+    .titles3{
+      background-color: rgb(255, 255, 255);
+      grid-row: 2/3;
+      grid-column: span 1;
+    }
+    .titles4{
+      background-color: rgb(255, 255, 255);
+      grid-row: 3/2;
+      grid-column: span 2;
+    }
+    .titles5{
+      background-color: blueviolet;
+      grid-column: span 1 ;
+    }
+    .titles6{
+      background-color: rgb(28, 60, 199);
+      height: 50px;
+      width: 50px;
+      
+    }
+    .titles7{
+      background-color: rgb(255, 255, 255);
+      grid-column: span 1;
+      grid-row: 3/5;
+      
+    }
+    .titles8{
+      background-color: rgb(65, 46, 46);
+      grid-row: 3/5;
+    }
+     .titles9{
+      background-color: rgb(226, 250, 11);
+      grid-row: 3/5;
+    }
+    .titles10{
+      background-color: rgb(255, 255, 255);
+      grid-row: 2/5;
+    }
+    .one{
+      background-color: rgb(16, 99, 223);
+      position: relative;
+      height: 70px;
+      border-bottom: 10px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="titles titles1">1</div>
+    <div class="titles titles2">2</div>
+    <div class="titles titles3">3</div>
+    <div class="titles titles4">4</div>
+    <!-- <div class="titles titles5">5</div> -->
+    <!-- <div class="titles titles6">6</div> -->
+    <div class="titles titles7">7</div>
+    <div class="titles titles8">8</div>
+    <div class="titles titles9">9</div>
+    <div class="titles10">
+      <div class="one"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
